@@ -7,7 +7,6 @@ html{
     background-size: cover;
     border-bottom:3px red solid;
 }
-
 .navbar{
     background-color: transparent !important;
     position: fixed;
