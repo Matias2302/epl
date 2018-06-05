@@ -27,7 +27,7 @@ body{
 }
 
 .navbar .navbar-nav{
-    
+
 }
 
 .navbar .nav-item a{
@@ -55,11 +55,14 @@ body{
     color:#fff;
 }
 
-#charts{
+#chart1{
     display:none;
     background-color: #fff;
 }
-
+#chart2{
+    display:none;
+    background-color: #fff;
+}
 
 
 
