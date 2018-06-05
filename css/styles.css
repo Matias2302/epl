@@ -3,11 +3,13 @@ html{
     font-weight: normal;
     font-style: normal;
     position:relative;
-
     width: 100%;
     height: 100vh;
 }
 
+body{
+    background-color:#303952;
+}
 .mynav{
     background-image: url('../img/frente.jpg');
     height: 500px;
@@ -25,7 +27,7 @@ html{
 }
 
 .navbar .navbar-nav{
-    margin: 0 auto;
+    
 }
 
 .navbar .nav-item a{
@@ -48,10 +50,14 @@ html{
 /*===== CHARTS ==========*/
 .select_chart{
     margin: 40px;
+    padding:40px;
+    background-color: #596275;
+    color:#fff;
 }
 
 #charts{
     display:none;
+    background-color: #fff;
 }
 
 
