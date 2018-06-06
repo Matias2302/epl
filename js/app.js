@@ -1,3 +1,14 @@
+////////////////////SCROLL/////////////////////
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 50) {
+        $(".menu").addClass("colorScroll");
+    } else {
+        $(".menu").removeClass("colorScroll");
+    }
+});
+
 ///////////////////CHART 1//////////////
 var ctx = document.getElementById('myChart1').getContext('2d');
 var chart = new Chart(ctx, {
