@@ -1,5 +1,5 @@
 *{
-    font-family: 'GlacialIndifferenceRegular';
+    font-family: 'GlacialIndifferenceRegular', 'PT Sans', sans-serif;
 }
 html{
     font-family: 'GlacialIndifferenceRegular';
@@ -15,18 +15,28 @@ body{
 }
 /*===== MENU ========*/
 .mynav{
-    background-image: url('../img/frente.jpg');
-    height: 500px;
+    display: flex;
+    background-image: url('../img/chispa.jpg');
+    height: 700px;
     background-size: cover;
     border-bottom: 2px solid #ff5252;
 }
 
+.mynav h2{
+    color:#fff;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .menu{
     position: fixed;
     width:100%;
+    font-size: 20px;
     background-color: transparent !important;
     transition: 0.4s ease;
     box-shadow: 0px 4px 9px #777;
+    z-index: 900;
 
 }
 .colorScroll{
@@ -35,13 +45,13 @@ body{
 }
 
 .navbar-brand img{
-    height: 35px;
+    height: 60px;
 }
 .navbar .navbar-nav{
 }
 
 .navbar .nav-item a{
-    color:#fff !important;
+
 }
 .navbar .nav-item a:hover{
     color:#ff5252 !important;
@@ -56,35 +66,109 @@ body{
     color:red !important;
 }
 /*=======================*/
+/*===== LANDING =========*/
+#bienvenida{
+    margin:30px auto;
+    background-color: black;
+    color:#fff;
+}
+#bienvenida p{
+    padding: 20px;
+}
+/*=======================*/
 /*===== MENSAJE =========*/
+#mensaje{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #596275;
+    box-shadow: 0px 4px 9px #222;
+}
+.mensaje_Rodrigo{
+    width: 70%;
+    margin: 40px auto 40px;
+    background-color: #596275;
+}
 
-
+.arim_foto{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-radius: 50%;
+    border: #fff 2px solid;
+    margin: 10% auto;
+}
 
 
 
 
 /*=======================*/
 /*===== CHARTS ==========*/
-.select_chart{
-    width: 65%;
+.select_chart, .articles{
+    width: 100%;
     margin: 40px auto;
     padding:40px;
     background-color: #596275;
     color:#fff;
+    box-shadow: 0px 4px 9px #222;
 }
-
+@media (max-width: 767px){
+    .select_chart{
+        width:100%;
+    }
+    #chart1{
+        width:100%;
+    }
+}
 #chart1{
-    margin:20px auto;
+    margin-top:20px;
+    padding:0;
     display:none;
     background-color: #fff;
 }
 #chart2{
+    margin: 20px;
+    display:none;
+    background-color: #fff;
+}
+
+#chart3{
+    margin: 20px;
+    display:none;
+    background-color: #fff;
+}
+#chart4{
+    margin: 20px;
     display:none;
     background-color: #fff;
 }
 /*============================================*/
+/*======= PARALLAX ==========*/
+#parallax_uno {
+  color:white;
+  height: 500px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image:url("../img/fcea stock grande-6.jpg");
+}
 
+/*==========================================*/
+/*======= NOTAS ==========*/
+.articles img{
+    float:left;
+}
+.notes{
+    background-color: #535c68;
+    padding:10px;
+    margin:10px;
+}
 
+.notes p h2{
+    margin:5px;
+}
+/*==========================================*/
+/*======= FOOTER ==========*/
 footer{
     height: 200px;
     display:flex;

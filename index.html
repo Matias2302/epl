@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- CSS de Font Awesome -->
   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <!-- Fuente -->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
     <title>EPL</title>
@@ -15,7 +16,7 @@
   <body>
       <!--Main Navigation-->
       <header>
-              <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu">
                   <a class="navbar-brand" href="http://fcea.edu.uy">
                       <img src="img/FCEA_blanco.png" alt="CCEE">
                   </a>
@@ -43,32 +44,83 @@
                   </div>
               </nav>
               <div class="mynav">
+                  <h2>Aprender y enseñar en privación de libertad</h2>
               </div>
       </header>
       <main>
-          <section>
-              <div class="mensaje_Rodrigo">
-
-              </div>
-          </section>
-          <div class="select_chart">
-              <h2>Seleccione una gráfica para visualizarla: </h2>
-              <button id="chart_1"type="button" class="btn btn-outline-light" name="button">Chart #1</button>
-              <button id="chart_2"type="button" class="btn btn-outline-light" name="button">Chart #2</button>
-              <button id="chart_3"type="button" class="btn btn-outline-light" name="button">Chart #3</button>
+          <section id="bienvenida">
               <div class="container">
-                  <div id="charts">
-                      <div id="chart1">
-                          <canvas id="myChart1"></canvas>
+                  <div class="row">
+                      <div class="col-md-8">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                       </div>
-                      <div id="chart2">
-                          <canvas id="myChart2"></canvas>
+                      <div class="col-md-4">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                       </div>
-
-                      <canvas id="myChart1"></canvas>
                   </div>
               </div>
-          </div>
+
+          </section>
+          <section id="mensaje">
+              <div class="mensaje_Rodrigo">
+                  <img class="arim_foto" src="img/arim.jpg" alt="">
+                  <h1>hola</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+          </section>
+          <div id="parallax_uno" class="parallax">
+
+</div>
+        <section id="graficas">
+            <div class="select_chart">
+                <h2>Seleccione una gráfica para visualizarla: </h2>
+                <button id="chart_1"type="button" class="btn btn-outline-light" name="button">Chart #1</button>
+                <button id="chart_2"type="button" class="btn btn-outline-light" name="button">Chart #2</button>
+                <button id="chart_3"type="button" class="btn btn-outline-light" name="button">Chart #3</button>
+                <button id="chart_4"type="button" class="btn btn-outline-light" name="button">Chart #4</button>
+
+                    <div id="charts">
+                        <div id="chart1">
+                            <canvas id="myChart1"></canvas>
+                        </div>
+                        <div id="chart2">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                        <div id="chart3">
+                            <canvas id="myChart3"></canvas>
+                        </div>
+                        <div id="chart4">
+                            <canvas id="myChart4"></canvas>
+                        </div>
+                    </div>
+            </div><!-- charts -->
+        </section>
+
+        <section id="notas">
+            <div class="articles">
+                <div class="container">
+                    <h2>Artículos de interés</h2>
+                    <div class="row">
+                        <div class="col-md-5 notes">
+                            <img src="https://placeimg.com/200/200/any" />
+                        </div>
+                        <div class="col-md-5 notes">
+                            <img src="https://placeimg.com/100/100/any" />
+                            <h3>Test</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 notes">
+                            <img src="https://placeimg.com/100/100/any" />
+                        </div>
+                        <div class="col-md-5 notes">
+                            <img src="https://placeimg.com/100/100/any" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
       </main>
