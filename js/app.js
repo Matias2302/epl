@@ -73,20 +73,22 @@ var chart = new Chart(ctx, {
 var ctx = document.getElementById('myChart3').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'bar',
+    type: 'horizontalBar',
     // The data for our dataset
     data: {
       datasets: [{
-            label: 'Hombres',
-            data: [10429, 10566, 10493,9775]
+            label: 'Población',
+            data: [67, 55, 1065, 3745, 308, 604, 1105, 13, 16, 103, 9, 604, 835, 159, 156, 326, 200, 154],
+            backgroundColor:'red',
           }, {
-            label: 'Mujeres',
-            data: [609, 614, 585, 466],
+            label: 'Plazas Educativas',
+            data: [400, 614, 585, 466],
             borderColor: 'rgb(255, 99, 132)',
+            backgroundColor:'blue',
             // Changes this dataset to become a line
-            type: 'bar'
+
           }],
-      labels: ['Nº 2 Chacra Libertad','Nº 3 Libertad','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº 10']
+      labels: ['Nº 2 Chacra Libertad','Nº 3 Libertad','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº','Nº']
     },
     // Configuration options go here
     options: {
@@ -141,6 +143,7 @@ var chart = new Chart(ctx, {
 $('#chart_1').click(function(){
     if($('#chart1').css('display')== 'none'){
         $('#chart1').show();
+        
     }
     else{
         $('#chart1').hide();

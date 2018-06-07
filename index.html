@@ -29,13 +29,13 @@
                         <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Artículos</a>
-                      </li>
-                      <li class="nav-item">
                         <a class="nav-link" href="#">Estadísticas</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Cosa1</a>
+                        <a class="nav-link" href="#">Notas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Videos</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Cosa 2</a>
@@ -44,7 +44,7 @@
                   </div>
               </nav>
               <div class="mynav">
-                  <h2>Aprender y enseñar en privación de libertad</h2>
+                  <h1>Aprender y enseñar en privación de libertad</h1>
               </div>
       </header>
       <main>
@@ -63,14 +63,16 @@
           </section>
           <section id="mensaje">
               <div class="mensaje_Rodrigo">
-                  <img class="arim_foto" src="img/arim.jpg" alt="">
-                  <h1>hola</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <div class="row">
+                      <img class="arim_foto" src="img/arim.jpg" alt="">
+                      <h1>hola</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
               </div>
           </section>
           <div id="parallax_uno" class="parallax">
 
-</div>
+          </div>
         <section id="graficas">
             <div class="select_chart">
                 <h2>Seleccione una gráfica para visualizarla: </h2>
@@ -78,7 +80,6 @@
                 <button id="chart_2"type="button" class="btn btn-outline-light" name="button">Chart #2</button>
                 <button id="chart_3"type="button" class="btn btn-outline-light" name="button">Chart #3</button>
                 <button id="chart_4"type="button" class="btn btn-outline-light" name="button">Chart #4</button>
-
                     <div id="charts">
                         <div id="chart1">
                             <canvas id="myChart1"></canvas>
@@ -97,37 +98,108 @@
         </section>
 
         <section id="notas">
-            <div class="articles">
-                <div class="container">
-                    <h2>Artículos de interés</h2>
-                    <div class="row">
-                        <div class="col-md-5 notes">
-                            <img src="https://placeimg.com/200/200/any" />
-                        </div>
-                        <div class="col-md-5 notes">
-                            <img src="https://placeimg.com/100/100/any" />
-                            <h3>Test</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>Notas</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" >
+                            <div class="zoom">
+                                <img class="card-img-top img-fluid" src="img/grupo.jpeg" alt="Card image cap">
+                            </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Actividades de extensión en las cárceles</h5>
+                            <p class="card-text">Actividad de cierre del Curso - taller: "Capacitación contable a operadores/as penitenciarios/as que apoyan el trabajo en emprendimientos productivos".</p>
+                            <a href="#" class="btn btn-dark">Nota completa</a>
+                          </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-5 notes">
-                            <img src="https://placeimg.com/100/100/any" />
+                    <div class="col-md-4">
+                        <div class="card" >
+                            <div class="zoom">
+                                <img class="card-img-top img-fluid" src="img/grupo.jpeg" alt="Card image cap">
+                            </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Aprender en cualquier contexto</h5>
+                            <p class="card-text">Estudiantes de la carrera en Contador Público y la Licenciatura en Administración cerraron actividades de un EFI en la Cárcel de Punta de Rieles.</p>
+                            <a href="nota1.html" class="btn btn-dark">Nota completa</a>
+                          </div>
                         </div>
-                        <div class="col-md-5 notes">
-                            <img src="https://placeimg.com/100/100/any" />
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" >
+                            <div class="zoom">
+                                <img class="card-img-top img-fluid" src="img/grupo.jpeg" alt="Card image cap">
+                            </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Bienvenida a estudiantes privados de libertad</h5>
+                            <p class="card-text">El miércoles 14 de marzo del año 2018 en la Sala de eventos de la Unidad N°4 Santiago Vázquez tuvo lugar un encuentro con estudiantes de Facultad que están privados de libertad.</p>
+                            <a href="#" class="btn btn-dark">Nota completa</a>
+                          </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
+        <section id="videos">
+                <div class="video1">
+                    <h2>Videos</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EnAvs1ypgrg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <div class="video2">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/o0xdV8Ktla0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+        </section>
+
+        <section id="otrasNotas">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <div id="parallax_dos" class="parallax">
+
+        </div>
+        <section id="descargas">
+            <div class="container">
+                <h2>Descargas</h2>
+            </div>
+        </section>
 
       </main>
       <footer>
           <div class="container">
-              <div class="negro">
-
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="logos">
+                        <a href="http://fcea.edu.uy" target="_blank"><img src="img/FCEA_UdelaR_blanco.png" alt="FCEA_UdelaR" /></a>
+                      </div>
+                      <div class="social-networks">
+                        <a href="https://twitter.com/FCEA_UdelaR" target="_blank" class="twitter"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.facebook.com/FCEA.UDELAR" target="_blank" class="facebook"><i class="fab fa-facebook-square"></i></a>
+                      </div>
+                  </div>
               </div>
           </div>
       </footer>
