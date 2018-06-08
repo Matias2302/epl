@@ -136,7 +136,7 @@ h6{
 #chart1{
     margin-top:20px;
     padding:0;
-    
+
     background-color: #fff;
 }
 #chart2{
@@ -168,6 +168,16 @@ h6{
 }
 
 /*==========================================*/
+/*======= FACULTAD ==========*/
+#facultad{
+    width: 100%;
+    margin: 40px auto;
+    padding:40px;
+    background-color: #596275;
+    box-shadow: 0px 4px 9px #222;
+}
+/*==========================================*/
+
 /*======= NOTAS ==========*/
 #notas{
     width: 100%;
@@ -188,6 +198,7 @@ h6{
 #notas h2{
     color:#fff;
 }
+
 
 .articles img{
     float:left;
