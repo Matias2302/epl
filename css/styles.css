@@ -54,11 +54,13 @@ body{
 }
 
 .navbar .nav-item a{
-
+    border-bottom:5px transparent !important;
+    margin:0;
 }
 .navbar .nav-item a:hover{
     color:#ff5252 !important;
     border-bottom:5px solid;
+    margin:0;
 }
 
 .navbar .dropdown-menu{
