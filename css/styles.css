@@ -88,7 +88,7 @@ body{
 }
 .mensaje_Rodrigo{
     width: 70%;
-    margin: 40px auto 40px;
+    margin: 10px auto 10px;
     padding:20px;
     color:#fff;
     background-color: #596275;
@@ -99,7 +99,7 @@ body{
     height: 80px;
     border-radius: 50%;
     border: #fff 2px solid;
-    margin: 10% auto;
+    margin: 10px auto;
 }
 
 
