@@ -1,8 +1,8 @@
 *{
-    font-family: 'GlacialIndifferenceRegular', 'PT Sans', sans-serif;
+    font-family:'PT Sans', sans-serif !important;
 }
 html{
-    font-family: 'GlacialIndifferenceRegular';
+
     font-weight: normal;
     font-style: normal;
     position:relative;
@@ -14,6 +14,9 @@ html{
 body{
     width: 100%;
     background-color:#303952;
+}
+h6{
+    font-weight: bold;
 }
 /*===== MENU ========*/
 .mynav{
@@ -59,7 +62,7 @@ body{
 }
 .navbar .nav-item a:hover{
     color:#ff5252 !important;
-    border-bottom:5px solid;
+    border-bottom:5px solid !important;
     margin:0;
 }
 
@@ -109,7 +112,7 @@ body{
 
 /*=======================*/
 /*===== CHARTS ==========*/
-.select_chart, .articles, .video1{
+.select_chart, .articles, .videosTodos{
     width: 100%;
     margin: 40px auto;
     padding:40px;
@@ -191,24 +194,19 @@ body{
     padding:10px;
     margin:10px;
 }
-
-.notes p, h2{
+.notes p h2{
     margin:5px;
 }
-
 .articles h5{
     color:#000;
 }
-
 .articles p{
     color:#000;
 }
-
 .zoom{
     position:relative;
     overflow: hidden;
 }
-
 .zoom img{
     padding:0;
     margin:0;
@@ -223,11 +221,16 @@ body{
 /*==========================================*/
 
 /*======= VIDEOS ==========*/
+.video1{
+
+}
 .video2{
     display: flex;
     justify-content: flex-end;
 }
-
+.borde-video{
+    box-shadow: 0px 4px 9px #222;
+}
 
 
 /*==========================================*/
@@ -245,12 +248,20 @@ body{
 }
 /*==========================================*/
 
-/*======= PAGINA NOTAS==========*/
+/*======= PAGINA NOTAS==================================================*/
 .notaCompleta{
     margin-top: 120px;
     margin-bottom: 120px;
     padding:30px;
     background-color: #fff;
+}
+.recuadro_rojo{
+    padding:50px;
+    background-color: #f1e4e0;
+}
+
+.notaCompleta img{
+    width: 100%;
 }
 /*==========================================*/
 /*======= FOOTER ==========*/
