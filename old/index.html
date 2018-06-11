@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- CSS de Font Awesome -->
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <!-- Fuente -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+    <title>EPL</title>
+  </head>
+  <body>
+      <!--Main Navigation-->
+      <header>
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu">
+                  <a class="navbar-brand" href="http://fcea.edu.uy">
+                      <img src="img/FCEA_blanco.png" alt="CCEE">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#graficas">Estadísticas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Notas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Videos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Cosa 2</a>
+                      </li>
+                    </ul>
+                  </div>
+              </nav>
+              <div class="mynav">
+                  <h1>Aprender y enseñar en privación de libertad</h1>
+              </div>
+      </header>
+      <main>
+          <section id="bienvenida">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-8">
+                          <div class="menesaje_intro">
+                              <h4>Aprender y enseñar en privación de libertad es un dossier elaborado por la Unidad de Comunicación en conjunto con la Unidad de Extensión y Relacionamiento con el medio que busca reunir información relativa a educación en cárceles, la actividad de la universidad en cárceles y particularmente la labor de FCEA en cárceles. Buscamos que nuestra comunidad se interese, informe y comprenda más sobre el sistema penal uruguayo, para de esa manera cumplir con el objetivo de democratizar la educación terciaria también dentro del sistema penal. Te invitamos a leerlo, ya que este tema involucra a toda la institución. </h4>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                  </div>
+              </div>
+
+          </section>
+          <section id="mensaje">
+
+                <div class="mensaje_Rodrigo">
+                    <img class="arim_foto" src="img/arim.jpg" alt="">
+                    <h1>hola</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+          </section>
+          <div id="parallax_uno" class="parallax">
+
+          </div>
+        <section id="graficas">
+            <div class="select_chart">
+                <h2>Seleccione una gráfica para visualizarla: </h2>
+                <button id="chart_1"type="button" class="btn btn-outline-dark active" name="button">Chart #1</button>
+                <button id="chart_2"type="button" class="btn btn-outline-dark" name="button">Chart #2</button>
+                <button id="chart_3"type="button" class="btn btn-outline-dark" name="button">Chart #3</button>
+                <button id="chart_4"type="button" class="btn btn-outline-dark" name="button">Chart #4</button>
+                    <div id="charts">
+                        <div id="chart1">
+                            <canvas id="myChart1"></canvas>
+                                <div class="card text-center text-white bg-dark">
+                                  <div class="card-header">
+                                    Destacado
+                                  </div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Pico a pico con Juan Manuel Petit</h5>
+                                    <p class="card-text">El comisionado parlamentario para el sistema penitenciario entrevistado por estudiantes en contexto de encierro de la Unidad Nº 4, ex Comcar.</p>
+                                    <a href="notaPetit.html" class="btn btn-outline-light">Ir a la nota completa</a>
+                                  </div>
+                                  <div class="card-footer text-muted">
+                                    2 days ago
+                                  </div>
+                                </div>
+                            </div>
+                        <div id="chart2">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                        <div id="chart3">
+                            <canvas id="myChart3"></canvas>
+                        </div>
+                        <div id="chart4">
+                            <canvas id="myChart4"></canvas>
+                        </div>
+                    </div>
+            </div><!-- charts -->
+        </section>
+
+        <section id="facultad">
+
+        </section>
+
+        <section id="notas">
+            <h2>Notas de FCEA</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" >
+                            <div class="zoom">
+                                <img class="card-img-top img-fluid" src="img/actividades_extension_carceles.jpg" alt="Card image cap">
+                            </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Actividades de extensión en las cárceles</h5>
+                            <p class="card-text">Actividad de cierre del Curso - taller: "Capacitación contable a operadores/as penitenciarios/as que apoyan el trabajo en emprendimientos productivos".</p>
+                            <a href="nota1.html" class="btn btn-dark">Nota completa</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" >
+                            <div class="zoom">
+                                <img class="card-img-top img-fluid size" src="img/aprender_contexto1.jpg" alt="Card image cap">
+                            </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Aprender en cualquier contexto</h5>
+                            <p class="card-text">Estudiantes de la carrera en Contador Público y la Licenciatura en Administración cerraron actividades de un EFI en la Cárcel de Punta de Rieles.</p>
+                            <a href="#" class="btn btn-dark">Nota completa</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" >
+                            <div class="zoom">
+                                <img class="card-img-top img-fluid" src="img/grupo.jpeg" alt="Card image cap">
+                            </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Bienvenida a estudiantes privados de libertad</h5>
+                            <p class="card-text">El miércoles 14 de marzo del año 2018 en la Sala de eventos de la Unidad N°4 Santiago Vázquez tuvo lugar un encuentro con estudiantes de Facultad que están privados de libertad.</p>
+                            <a href="nota2.html" class="btn btn-dark">Nota completa</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="videos">
+                <div class="videosTodos">
+                    <div class="intro">
+                        <h2>Más Universidad: Aportes al desarrollo del país</h2>
+                        <p>Más Universidad, aportes al desarrollo del país fue un ciclo de vídeos producidos por la Universidad de la República, abordando temas diversos en los que la institución brinda un aporte importante a la sociedad. A la vez se propone la divulgación científica en materias puntuales. La producción está a cargo de Rectorado y la Unidad de Comunicación de la Universidad de la República (UCUR) y la realización estuvo a cargo de docentes de la Facultad de Información y Comunicación, con la colaboración de un grupo de estudiantes avanzados de Comunicación que realizaron prácticas preprofesionales.
+                        Compartimos dos videos que tienen como objetivo difundir el trabajo de la Udelar con estudiantes privados de libertad
+                        Estudiar en contextos de encierro:
+                        </p>
+                    </div>
+                    <div class="video1">
+                        <iframe style="border: 3px solid #222;" width="560" height="315" src="https://www.youtube.com/embed/EnAvs1ypgrg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    <div class="video2">
+                        <iframe style="border: 3px solid #222;" width="560" height="315" src="https://www.youtube.com/embed/o0xdV8Ktla0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+        </section>
+
+        <section id="otrasNotas">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <div id="parallax_dos" class="parallax">
+
+        </div>
+        <section id="descargas">
+            <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2>Recursos</h2>
+                            <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small>3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small>Donec id elit non mi porta.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small class="text-muted">Donec id elit non mi porta.</small>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+    <small class="text-muted">Donec id elit non mi porta.</small>
+  </a>
+</div>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Documentos</h2>
+                            <p>Protocolo</p>
+                            <ul class="list-group">
+                              <li class="list-group-item active">Cras justo odio</li>
+                              <li class="list-group-item">Dapibus ac facilisis in</li>
+                              <li class="list-group-item">Morbi leo risus</li>
+                              <li class="list-group-item">Porta ac consectetur ac</li>
+                              <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Lecturas/Otros</h2>
+                            <ul class="list-group">
+                              <li class="list-group-item active">Cras justo odio</li>
+                              <li class="list-group-item">Dapibus ac facilisis in</li>
+                              <li class="list-group-item">Morbi leo risus</li>
+                              <li class="list-group-item">Porta ac consectetur ac</li>
+                              <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                    </div>
+
+            </div>
+        </section>
+
+      </main>
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="logos">
+                        <a href="http://fcea.edu.uy" target="_blank"><img src="img/FCEA_UdelaR_blanco.png" alt="FCEA_UdelaR" /></a>
+                      </div>
+                      <div class="social-networks">
+                        <a href="https://twitter.com/FCEA_UdelaR" target="_blank" class="twitter"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.facebook.com/FCEA.UDELAR" target="_blank" class="facebook"><i class="fab fa-facebook-square"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </body>
+
+  <!-- JS de jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+    </script>
+	<!-- JS Propio -->
+	<script src="js/app.js"></script>
+</html>

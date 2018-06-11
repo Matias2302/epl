@@ -15,6 +15,10 @@ body{
 h6{
     font-weight: bold;
 }
+
+.subtitulo{
+    margin:30px;
+}
 /*===== MENU ========*/
 .mynav{
     display: flex;
@@ -46,6 +50,11 @@ h6{
     background-color: #222 !important;
     transition: background-color 0.4s ease-out;
 }
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+    border-bottom: 5px solid transparent!important;
+    transition: 0.4s;
+}
 
 .navbar-brand img{
     height: 60px;
@@ -70,11 +79,16 @@ h6{
 .sr-only{
     color:red !important;
 }
+
+.lista{
+    margin-top: 15px;
+    padding: 10px;
+}
 /*=======================*/
 /*===== LANDING =========*/
 #bienvenida{
     margin:30px auto;
-    background-color: black;
+    background-color: #222;
     color:#fff;
 }
 #bienvenida p{
@@ -87,6 +101,15 @@ h6{
     margin: 0 auto;
     background-color: #596275;
     box-shadow: 0px 4px 9px #222;
+}
+
+.mensaje_intro{
+    padding: 60px;
+}
+
+.mensaje_intro h4{
+    font-weight: normal;
+    margin-bottom: 20px;
 }
 .mensaje_Rodrigo{
     width: 70%;
@@ -109,7 +132,7 @@ h6{
 
 /*=======================*/
 /*===== CHARTS ==========*/
-.articles, .videosTodos{
+.articles, #universidad{
     width: 100%;
     margin: 40px auto;
     padding:40px;
@@ -125,6 +148,16 @@ h6{
     color: #596275;
     box-shadow: 0px 4px 9px #222;
 }
+
+.intro_charts{
+    margin: 20px 0 50px 0;
+}
+.pie_chart{
+    display: inline-block !important;
+    margin:30px;
+    max-width: 600px;
+    max-height: 600px;
+}
 @media (max-width: 767px){
     .select_chart{
         width:100%;
@@ -133,27 +166,23 @@ h6{
         width:100%;
     }
 }
-#chart1{
-    margin-top:20px;
-    padding:0;
-
-    background-color: #fff;
-}
-#chart2{
-    margin: 20px;
-    display:none;
+.chart_container{
+    display: none;
+    margin:20px;
     background-color: #fff;
 }
 
-#chart3{
-    margin: 20px;
-    display:none;
-    background-color: #fff;
+.chart_container_selected{
+    display: block;
+
 }
-#chart4{
-    margin: 20px;
-    display:none;
-    background-color: #fff;
+
+.titulo_chart{
+    padding:40px;
+}
+
+#chart5, #chart4, #chart3, #chart2, #chart1{
+    text-align: center;
 }
 /*============================================*/
 /*======= PARALLAX ==========*/
@@ -179,7 +208,7 @@ h6{
 /*==========================================*/
 
 /*======= NOTAS ==========*/
-#notas{
+#FCEA{
     width: 100%;
     margin: 40px auto;
     padding:40px;
@@ -195,10 +224,14 @@ h6{
     box-shadow: 0px 4px 9px #222;
 }
 
-#notas h2{
+#FCEA h2, h1{
+    margin:10px 0 30px 0;
     color:#fff;
 }
 
+.blockquote {
+    font-size: 1rem;
+}
 
 .articles img{
     float:left;
@@ -222,6 +255,7 @@ h6{
 .zoom{
     position:relative;
     overflow: hidden;
+    max-height: 260px;
 }
 .zoom img{
     padding:0;
@@ -235,14 +269,26 @@ h6{
 
 
 /*==========================================*/
+/*======= Universidad ==========*/
+#universidad{
+  width: 100%;
+  margin: 40px auto;
+  padding:40px;
+  background-color: #596275;
+  box-shadow: 0px 4px 9px #222;
+}
 
+.notasUniversidad{
+  color:#000;
+}
+/*==========================================*/
 /*======= VIDEOS ==========*/
-.video1{
 
+.video1{
+    margin:10px;
 }
 .video2{
-    display: flex;
-    justify-content: flex-end;
+    margin:10px;
 }
 .borde-video{
     box-shadow: 0px 4px 9px #222;
@@ -251,7 +297,7 @@ h6{
 
 /*==========================================*/
 /*======= DESCARGAS ==========*/
-#descargas{
+#recursos{
     width: 100%;
     margin: 40px auto;
     padding:40px;
@@ -259,7 +305,7 @@ h6{
     box-shadow: 0px 4px 9px #222;
 }
 
-#descargas h2{
+#recursos h2{
     color:#fff;
 }
 /*==========================================*/
@@ -269,24 +315,32 @@ h6{
     font-size: 20px;
     margin-top: 120px;
     margin-bottom: 120px;
-    padding:0 180px 0 180px;
+    padding: 60px 180px 60PX 180px;
     background-color: #fff;
-
+    box-shadow: 0px 4px 9px #222;
 }
+.recuadro_borde{
+    padding:50px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+}
+
 .recuadro_rojo{
     padding:50px;
     margin-bottom: 30px;
     background-color: #f1e4e0;
 }
 
-.notaCompleta img{
+.notaCompleta img {
     margin-bottom: 20px;
-    width: auto;
+    width: 100%;
 }
 
 .notaCompleta h1{
-    margin-bottom: 30px;
+
+    margin:0 0 30px 0;
     font-size: 50px;
+    color:#000;
 }
 
 .notaCompleta h6{
@@ -296,6 +350,10 @@ h6{
 
 .imagen_salida{
     width: auto;
+}
+
+.pregunta{
+    font-style: italic;
 }
 /*==========================================*/
 /*======= FOOTER ==========*/

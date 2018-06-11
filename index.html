@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120658236-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-120658236-1');
+    </script>
+
     <meta charset="utf-8">
     <!-- CSS de Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -29,16 +39,16 @@
                         <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#graficas">Estadísticas</a>
+                        <a class="nav-link" href="#graficas">Panorama</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Notas</a>
+                        <a class="nav-link" href="#universidad">Universidad</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Videos</a>
+                        <a class="nav-link" href="#FCEA">Facultad</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Cosa 2</a>
+                        <a class="nav-link" href="#recursos">Recursos</a>
                       </li>
                     </ul>
                   </div>
@@ -52,19 +62,25 @@
               <div class="container">
                   <div class="row">
                       <div class="col-md-8">
-                          <div class="menesaje_intro">
-                              <h4>Aprender y enseñar en privación de libertad es un dossier elaborado por la Unidad de Comunicación en conjunto con la Unidad de Extensión y Relacionamiento con el medio que busca reunir información relativa a educación en cárceles, la actividad de la universidad en cárceles y particularmente la labor de FCEA en cárceles. Buscamos que nuestra comunidad se interese, informe y comprenda más sobre el sistema penal uruguayo, para de esa manera cumplir con el objetivo de democratizar la educación terciaria también dentro del sistema penal. Te invitamos a leerlo, ya que este tema involucra a toda la institución. </h4>
+                          <div class="mensaje_intro">
+                              <h4>¿Qué es este dossier?</h4>
+                              <h5>Aprender y enseñar en privación de libertad es un dossier elaborado por la Unidad de Comunicación en conjunto con la Unidad de Extensión y Relacionamiento con el medio que busca reunir información relativa a educación en cárceles, la actividad de la universidad en cárceles y particularmente la labor de FCEA en cárceles. Buscamos que nuestra comunidad se interese, informe y comprenda más sobre el sistema penal uruguayo, para de esa manera cumplir con el objetivo de democratizar la educación terciaria también dentro del sistema penal. Te invitamos a leerlo, ya que este tema involucra a toda la institución. </h5>
                           </div>
                       </div>
-                      <div class="col-md-4">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <div class="col-md-4 lista">
+                          <h3>Contenido</h3>
+                          <div class="list-group">
+                              <a href="#graficas" class="list-group-item list-group-item-action list-group-item-light">Panorama</a>
+                              <a href="#universidad" class="list-group-item list-group-item-action list-group-item-light">Universidad</a>
+                              <a href="#FCEA" class="list-group-item list-group-item-action list-group-item-light">Facultad</a>
+                              <a href="#recursos" class="list-group-item list-group-item-action list-group-item-light">Descargas</a>
+                        </div>
                       </div>
                   </div>
               </div>
 
           </section>
           <section id="mensaje">
-
                 <div class="mensaje_Rodrigo">
                     <img class="arim_foto" src="img/arim.jpg" alt="">
                     <h1>hola</h1>
@@ -77,13 +93,21 @@
           </div>
         <section id="graficas">
             <div class="select_chart">
-                <h2>Seleccione una gráfica para visualizarla: </h2>
-                <button id="chart_1"type="button" class="btn btn-outline-dark active" name="button">Chart #1</button>
-                <button id="chart_2"type="button" class="btn btn-outline-dark" name="button">Chart #2</button>
-                <button id="chart_3"type="button" class="btn btn-outline-dark" name="button">Chart #3</button>
-                <button id="chart_4"type="button" class="btn btn-outline-dark" name="button">Chart #4</button>
+                <div class="intro_charts">
+                    <h3>Panorama del sistema penal</h3>
+                    <p>Agrupamos algunos datos estadísticos que brindan un panorama general del sistema carcelario y su evolución en el tiempo. Además, compartimos una reciente entrevista que personas privadas de libertad realizaron al comisionado parlamentario en el marco del proyecto de extensión Talleres de radio y prensa en la Unidad N°4 del INR. En ella se plantean asuntos centrales de la realidad cotidiana de la educación en privación de libertad. </p>
+                </div>
+                <button id="chart_1" class="btn btn-outline-dark chart_button active" data-chart='chart1'>Población carcelaria</button>
+                <button id="chart_2" class="btn btn-outline-dark chart_button" data-chart='chart2'>Nivel educativo</button>
+                <button id="chart_3" class="btn btn-outline-dark chart_button" data-chart='chart3'>Plazas educativas</button>
+                <button id="chart_4" class="btn btn-outline-dark chart_button" data-chart='chart4'>Distribución por género</button>
+                <button id="chart_5" class="btn btn-outline-dark chart_button" data-chart='chart5'>Por delito</button>
                     <div id="charts">
-                        <div id="chart1">
+
+                        <div id="chart1" class="chart_container chart_container_selected">
+                            <div class="titulo_chart">
+                                <h2>Evolución de la población carcelaria en Uruguay 1990-2017</h2>
+                            </div>
                             <canvas id="myChart1"></canvas>
                                 <div class="card text-center text-white bg-dark">
                                   <div class="card-header">
@@ -91,176 +115,255 @@
                                   </div>
                                   <div class="card-body">
                                     <h5 class="card-title">Pico a pico con Juan Manuel Petit</h5>
-                                    <p class="card-text">El comisionado parlamentario para el sistema penitenciario entrevistado por estudiantes en contexto de encierro de la Unidad Nº 4, ex Comcar.</p>
+                                    <p class="card-text">La entrevista fue realizada en el marco del proyecto de extensión Talleres​ ​de​ ​radio​ ​y​ ​prensa​ ​en​ ​la​ ​Unidad​ ​N°​ ​4​ ​del​ ​Instituto​ ​Nacional​ ​de​ ​Rehabilitación, que funciona en la Comunidad Educativa de ese centro desde noviembre de 2017 y del que participa Sala de Redacción. Este espacio de la Facultad de Información y Comunicación, que cuenta con el apoyo de Radiodifusión Nacional del Uruguay, fue aprobado y financiado por la Comisión Sectorial de Extensión y Actividades en el Medio en su llamado a Derechos Humanos 2017.</p>
                                     <a href="notaPetit.html" class="btn btn-outline-light">Ir a la nota completa</a>
                                   </div>
                                   <div class="card-footer text-muted">
-                                    2 days ago
+                                    <p>Fuente: <a href="http://sdr.liccom.edu.uy/2018/05/25/comisionado/">http://sdr.liccom.edu.uy/2018/05/25/comisionado/</a></p>
                                   </div>
                                 </div>
                             </div>
-                        <div id="chart2">
+                        <div id="chart2" class="chart_container">
+                            <div class="titulo_chart">
+                                <h2>Nivel educativo de la población carcelaria (2010)</h2>
+                                <h6>Elaborado en base a los datos del Censo de Cárceles</h6>
+                            </div>
                             <canvas id="myChart2"></canvas>
+                            <div class="card text-center text-white bg-dark">
+                              <div class="card-header">
+                                Destacado
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Pico a pico con Juan Manuel Petit</h5>
+                                <p class="card-text">La entrevista fue realizada en el marco del proyecto de extensión Talleres​ ​de​ ​radio​ ​y​ ​prensa​ ​en​ ​la​ ​Unidad​ ​N°​ ​4​ ​del​ ​Instituto​ ​Nacional​ ​de​ ​Rehabilitación, que funciona en la Comunidad Educativa de ese centro desde noviembre de 2017 y del que participa Sala de Redacción. Este espacio de la Facultad de Información y Comunicación, que cuenta con el apoyo de Radiodifusión Nacional del Uruguay, fue aprobado y financiado por la Comisión Sectorial de Extensión y Actividades en el Medio en su llamado a Derechos Humanos 2017.</p>
+                                <a href="notaPetit.html" class="btn btn-outline-light">Ir a la nota completa</a>
+                              </div>
+                              <div class="card-footer text-muted">
+                                <p>Fuente: <a href="http://sdr.liccom.edu.uy/2018/05/25/comisionado/">http://sdr.liccom.edu.uy/2018/05/25/comisionado/</a></p>
+                              </div>
+                            </div>
                         </div>
-                        <div id="chart3">
+                        <div id="chart3" class="chart_container">
+                            <div class="titulo_chart">
+                                <h2>Distribución de la población por cárceles/plazas educativas por centro</h2>
+                            </div>
                             <canvas id="myChart3"></canvas>
+                            <div class="card text-center text-white bg-dark">
+                              <div class="card-header">
+                                Destacado
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Pico a pico con Juan Manuel Petit</h5>
+                                <p class="card-text">La entrevista fue realizada en el marco del proyecto de extensión Talleres​ ​de​ ​radio​ ​y​ ​prensa​ ​en​ ​la​ ​Unidad​ ​N°​ ​4​ ​del​ ​Instituto​ ​Nacional​ ​de​ ​Rehabilitación, que funciona en la Comunidad Educativa de ese centro desde noviembre de 2017 y del que participa Sala de Redacción. Este espacio de la Facultad de Información y Comunicación, que cuenta con el apoyo de Radiodifusión Nacional del Uruguay, fue aprobado y financiado por la Comisión Sectorial de Extensión y Actividades en el Medio en su llamado a Derechos Humanos 2017.</p>
+                                <a href="notaPetit.html" class="btn btn-outline-light">Ir a la nota completa</a>
+                              </div>
+                              <div class="card-footer text-muted">
+                                <p>Fuente: <a href="http://sdr.liccom.edu.uy/2018/05/25/comisionado/">http://sdr.liccom.edu.uy/2018/05/25/comisionado/</a></p>
+                              </div>
+                            </div>
                         </div>
-                        <div id="chart4">
-                            <canvas id="myChart4"></canvas>
+                        <div id="chart4" class="chart_container">
+                            <div class="titulo_chart">
+                                <h2>Distribución de personas privadas de libertad por género</h2>
+                            </div>
+                            <canvas id="myChart4" class="pie_chart"></canvas>
+                            <div class="card text-center text-white bg-dark">
+                              <div class="card-header">
+                                Destacado
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Pico a pico con Juan Manuel Petit</h5>
+                                <p class="card-text">La entrevista fue realizada en el marco del proyecto de extensión Talleres​ ​de​ ​radio​ ​y​ ​prensa​ ​en​ ​la​ ​Unidad​ ​N°​ ​4​ ​del​ ​Instituto​ ​Nacional​ ​de​ ​Rehabilitación, que funciona en la Comunidad Educativa de ese centro desde noviembre de 2017 y del que participa Sala de Redacción. Este espacio de la Facultad de Información y Comunicación, que cuenta con el apoyo de Radiodifusión Nacional del Uruguay, fue aprobado y financiado por la Comisión Sectorial de Extensión y Actividades en el Medio en su llamado a Derechos Humanos 2017.</p>
+                                <a href="notaPetit.html" class="btn btn-outline-light">Ir a la nota completa</a>
+                              </div>
+                              <div class="card-footer text-muted">
+                                <p>Fuente: <a href="http://sdr.liccom.edu.uy/2018/05/25/comisionado/">http://sdr.liccom.edu.uy/2018/05/25/comisionado/</a></p>
+                              </div>
+                            </div>
+                        </div>
+                        <div id="chart5" class="chart_container">
+                            <div class="titulo_chart">
+                                <h2>Distribución de personas privadas de libertad por delito</h2>
+                            </div>
+                            <canvas id="myChart5"></canvas>
+                            <div class="card text-center text-white bg-dark">
+                              <div class="card-header">
+                                Destacado
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Pico a pico con Juan Manuel Petit</h5>
+                                <p class="card-text">La entrevista fue realizada en el marco del proyecto de extensión Talleres​ ​de​ ​radio​ ​y​ ​prensa​ ​en​ ​la​ ​Unidad​ ​N°​ ​4​ ​del​ ​Instituto​ ​Nacional​ ​de​ ​Rehabilitación, que funciona en la Comunidad Educativa de ese centro desde noviembre de 2017 y del que participa Sala de Redacción. Este espacio de la Facultad de Información y Comunicación, que cuenta con el apoyo de Radiodifusión Nacional del Uruguay, fue aprobado y financiado por la Comisión Sectorial de Extensión y Actividades en el Medio en su llamado a Derechos Humanos 2017.</p>
+                                <a href="notaPetit.html" class="btn btn-outline-light">Ir a la nota completa</a>
+                              </div>
+                              <div class="card-footer text-muted">
+                                <p>Fuente: <a href="http://sdr.liccom.edu.uy/2018/05/25/comisionado/">http://sdr.liccom.edu.uy/2018/05/25/comisionado/</a></p>
+                              </div>
+                            </div>
                         </div>
                     </div>
             </div><!-- charts -->
         </section>
+        <section id="universidad">
+          <h1>La Universidad en contextos de encierro</h1>
+                <div class=" videosTodos">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="embed-responsive embed-responsive-16by9 video1">
+                          <iframe style="border: 3px solid #222;" src="https://www.youtube.com/embed/EnAvs1ypgrg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-        <section id="facultad">
-
+                      </div>
+                      <div class="embed-responsive embed-responsive-16by9 video2">
+                          <iframe class="embed-responsive-item" style="border: 3px solid #222;" src="https://www.youtube.com/embed/o0xdV8Ktla0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="intro">
+                          <h2>Más Universidad: Aportes al desarrollo del país</h2>
+                          <p>Más Universidad, aportes al desarrollo del país fue un ciclo de vídeos producidos por la Universidad de la República, abordando temas diversos en los que la institución brinda un aporte importante a la sociedad. A la vez se propone la divulgación científica en materias puntuales. La producción está a cargo de Rectorado y la Unidad de Comunicación de la Universidad de la República (UCUR) y la realización estuvo a cargo de docentes de la Facultad de Información y Comunicación, con la colaboración de un grupo de estudiantes avanzados de Comunicación que realizaron prácticas preprofesionales.
+                          Compartimos dos videos que tienen como objetivo difundir el trabajo de la Udelar con estudiantes privados de libertad
+                          Estudiar en contextos de encierro:
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="subtitulo">Notas de la Universidad</h2>
+                <div class="notasUniversidad">
+                  <div class="container">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">La educación como derecho humano, el trabajo de la Udelar con estudiantes privados de libertad</h5>
+                              <p class="card-text">La Universidad de la República (Udelar) tiene por objetivo democratizar el acceso al conocimiento y a la educación terciaria y desde la Segunda Reforma Universitaria del 2007 adquirió el compromiso de integrar las funciones de enseñanza, investigación y extensión en el entendido de que la responsabilidad de la educación no se piensa de manera aislada sino conectada con la sociedad y con otros actores con los que se intercambian saberes y prácticas. </p>
+                              <a href="educacion_udelar.html" class="btn btn-dark">Nota completa</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title">Special title treatment</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
         </section>
 
-        <section id="notas">
-            <h2>Notas de FCEA</h2>
+        <section id="FCEA">
+            <h1>NOTAS DE FCEA</h1>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card" >
                             <div class="zoom">
-                                <img class="card-img-top img-fluid" src="img/actividades_extension_carceles.jpg" alt="Card image cap">
+                                <a href="actividad_carceles.html"><img class="card-img-top img-fluid" src="img/actividades_extension_carceles.jpg" alt="Card image cap"></a>
                             </div>
                           <div class="card-body">
                             <h5 class="card-title">Actividades de extensión en las cárceles</h5>
                             <p class="card-text">Actividad de cierre del Curso - taller: "Capacitación contable a operadores/as penitenciarios/as que apoyan el trabajo en emprendimientos productivos".</p>
-                            <a href="nota1.html" class="btn btn-dark">Nota completa</a>
+                            <a href="actividad_carceles.html" class="btn btn-dark">Nota completa</a>
                           </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card" >
                             <div class="zoom">
-                                <img class="card-img-top img-fluid size" src="img/aprender_contexto1.jpg" alt="Card image cap">
+                                <a href="aprender_contexto.html"><img class="card-img-top img-fluid size" src="img/aprender_contexto1.jpg" alt="Card image cap"></a>
                             </div>
                           <div class="card-body">
                             <h5 class="card-title">Aprender en cualquier contexto</h5>
                             <p class="card-text">Estudiantes de la carrera en Contador Público y la Licenciatura en Administración cerraron actividades de un EFI en la Cárcel de Punta de Rieles.</p>
-                            <a href="#" class="btn btn-dark">Nota completa</a>
+                            <a href="aprender_contexto.html" class="btn btn-dark">Nota completa</a>
                           </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card" >
                             <div class="zoom">
-                                <img class="card-img-top img-fluid" src="img/grupo.jpeg" alt="Card image cap">
+                                <a href="bienvenida.html"><img class="card-img-top img-fluid" src="img/grupo.jpeg" alt="Card image cap"></a>
                             </div>
                           <div class="card-body">
                             <h5 class="card-title">Bienvenida a estudiantes privados de libertad</h5>
                             <p class="card-text">El miércoles 14 de marzo del año 2018 en la Sala de eventos de la Unidad N°4 Santiago Vázquez tuvo lugar un encuentro con estudiantes de Facultad que están privados de libertad.</p>
-                            <a href="nota2.html" class="btn btn-dark">Nota completa</a>
+                            <a href="bienvenida.html" class="btn btn-dark">Nota completa</a>
                           </div>
                         </div>
                     </div>
                 </div>
-
-            </div>
-        </section>
-
-        <section id="videos">
-                <div class="videosTodos">
-                    <div class="intro">
-                        <h2>Más Universidad: Aportes al desarrollo del país</h2>
-                        <p>Más Universidad, aportes al desarrollo del país fue un ciclo de vídeos producidos por la Universidad de la República, abordando temas diversos en los que la institución brinda un aporte importante a la sociedad. A la vez se propone la divulgación científica en materias puntuales. La producción está a cargo de Rectorado y la Unidad de Comunicación de la Universidad de la República (UCUR) y la realización estuvo a cargo de docentes de la Facultad de Información y Comunicación, con la colaboración de un grupo de estudiantes avanzados de Comunicación que realizaron prácticas preprofesionales.
-                        Compartimos dos videos que tienen como objetivo difundir el trabajo de la Udelar con estudiantes privados de libertad
-                        Estudiar en contextos de encierro:
-                        </p>
-                    </div>
-                    <div class="video1">
-                        <iframe style="border: 3px solid #222;" width="560" height="315" src="https://www.youtube.com/embed/EnAvs1ypgrg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    </div>
-                    <div class="video2">
-                        <iframe style="border: 3px solid #222;" width="560" height="315" src="https://www.youtube.com/embed/o0xdV8Ktla0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-        </section>
-
-        <section id="otrasNotas">
-            <div class="container">
                 <div class="row">
-                  <div class="col-sm-6">
-                    <div class="card">
+                  <div class="col-md-4">
+                    <div class="card" >
+                        <div class="zoom">
+                            <a href="fcea_carceles.html"><img class="card-img-top img-fluid" src="img/visita_fcea.jpeg" alt="Card image cap"></a>
+                        </div>
                       <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">FCEA en las cárceles</h5>
+                        <p class="card-text">El vínculo entre la Facultad de Ciencias Económicas y de Administración (FCEA) y el sistema penitenciario ha sido predominantemente a través de la función de extensión.</p>
+                        <a href="fcea_carceles.html" class="btn btn-dark">Nota completa</a>
                       </div>
                     </div>
                   </div>
                 </div>
             </div>
         </section>
+
+
         <div id="parallax_dos" class="parallax">
 
         </div>
-        <section id="descargas">
+        <section id="recursos">
+            <h1>DESCARGAS</h1>
             <div class="container">
-
                     <div class="row">
                         <div class="col-md-4">
                             <h2>Recursos</h2>
                             <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small>3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small>Donec id elit non mi porta.</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
-  </a>
-</div>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                                  <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">List group item heading</h5>
+                                    <small>3 days ago</small>
+                                  </div>
+                                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                  <small>Donec id elit non mi porta.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                  <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">List group item heading</h5>
+                                    <small class="text-muted">3 days ago</small>
+                                  </div>
+                                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                  <small class="text-muted">Donec id elit non mi porta.</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                  <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">List group item heading</h5>
+                                    <small class="text-muted">3 days ago</small>
+                                  </div>
+                                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                  <small class="text-muted">Donec id elit non mi porta.</small>
+                                </a>
+                            </div>
                         </div>
                         <div class="col-md-4">
                             <h2>Documentos</h2>
-                            <p>Protocolo</p>
-                            <ul class="list-group">
-                              <li class="list-group-item active">Cras justo odio</li>
-                              <li class="list-group-item">Dapibus ac facilisis in</li>
-                              <li class="list-group-item">Morbi leo risus</li>
-                              <li class="list-group-item">Porta ac consectetur ac</li>
-                              <li class="list-group-item">Vestibulum at eros</li>
-                            </ul>
+                            <div class="list-group">
+                              <a href="#" class="list-group-item list-group-item-action">Protocolo FCEA</a>
+                              <a href="#" class="list-group-item list-group-item-action">Resolución CDC</a>
+                              <a href="#" class="list-group-item list-group-item-action">Resolución INR</a>
+                            </div>
                         </div>
                         <div class="col-md-4">
                             <h2>Lecturas/Otros</h2>
-                            <ul class="list-group">
-                              <li class="list-group-item active">Cras justo odio</li>
-                              <li class="list-group-item">Dapibus ac facilisis in</li>
-                              <li class="list-group-item">Morbi leo risus</li>
-                              <li class="list-group-item">Porta ac consectetur ac</li>
-                              <li class="list-group-item">Vestibulum at eros</li>
-                            </ul>
+                            <div class="list-group">
+                              <a href="docs/protocoloFCEA.pdf" class="list-group-item list-group-item-action">Protocolo FCEA</a>
+                              <a href="#" class="list-group-item list-group-item-action">Resolución CDC</a>
+                              <a href="#" class="list-group-item list-group-item-action">Resolución INR</a>
+                            </div>
                         </div>
                     </div>
 
