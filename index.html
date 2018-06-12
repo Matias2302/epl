@@ -64,7 +64,7 @@
                       <div class="col-md-8">
                           <div class="mensaje_intro">
                               <h4>¿Qué es este dossier?</h4>
-                              <h5>Aprender y enseñar en privación de libertad es un dossier elaborado por la Unidad de Comunicación en conjunto con la Unidad de Extensión y Relacionamiento con el medio que busca reunir información relativa a educación en cárceles, la actividad de la universidad en cárceles y particularmente la labor de FCEA en cárceles. Buscamos que nuestra comunidad se interese, informe y comprenda más sobre el sistema penal uruguayo, para de esa manera cumplir con el objetivo de democratizar la educación terciaria también dentro del sistema penal. Te invitamos a leerlo, ya que este tema involucra a toda la institución. </h5>
+                              <h5>Aprender y enseñar en privación de libertad es un dossier elaborado por la Unidad de Comunicación en conjunto con la Unidad de Extensión y Relacionamiento con el Medio que busca reunir información relativa a la educación en cárceles, la actividad de la universidad en cárceles y particularmente la labor de FCEA en cárceles. Buscamos que nuestra comunidad se interese, informe y comprenda más sobre el sistema penal uruguayo, para de esa manera cumplir con el objetivo de democratizar la educación terciaria también dentro del sistema penal. Te invitamos a leerlo, ya que este tema involucra a toda la institución. </h5>
                           </div>
                       </div>
                       <div class="col-md-4 lista">
@@ -82,9 +82,13 @@
           </section>
           <section id="mensaje">
                 <div class="mensaje_Rodrigo">
-                    <img class="arim_foto" src="img/arim.jpg" alt="">
-                    <h1>hola</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>La Universidad de la República debe trabajar para universalizar la educación terciaria y democratizar el conocimiento. En este caso, debemos generar los espacios y la institucionalidad necesaria para que las personas privadas de libertad puedan acceder a los cursos de manera real. Hemos dado un paso importante con la aprobación del protocolo en 2017, pero aún queda un largo camino para decir que esto está consolidado ya que su implementación recae en los hombros de docentes y estudiantes con voluntad de hacerlo. La labor de la FCEA en privación de libertad no puede estar atada a voluntarismos, sino que es un deber de la institución dedicar tiempo y recursos a ello.
+                    </p>
+                    <p>El INR nos ha facilitado la entrada a las cárceles y se ha ocupado de que nuestros estudiantes puedan rendir las revisiones en condiciones. Esto no obsta de reconocer el contexto donde nos encontramos: nuestro país tiene problemas estructurales con sus cárceles. Hay malas condiciones locativas, hacinamiento, oportunidades laborales o de formación escasas en relación a la cantidad de gente, entre otras. Por su parte, el sistema político parece decidido a profundizar un camino carcelario, donde la respuesta al miedo y la indignación de la gente es más prisión. Pero con esta respuesta, ¿tendremos menos miedo?, ¿estaremos menos indignados?
+                    </p>
+                    <p>Vemos con preocupación que cada vez más se utilice a los presos como chivo expiatorio de los males de nuestra sociedad. Si queremos vivir en paz y sin miedo, debemos abandonar de una vez por todas la retórica de la guerra. Si pensamos en guerra, sólo veremos enemigos. Ya no veremos en un delito (sin importar cuál sea) el quebranto de una ley, una desviación de la norma o un conflicto interpersonal; veremos un acto de guerra y enemistad por parte de quien lo comete. Reflexionen sobre si desearían construir un futuro junto a sus enemigos o aniquilarlos y conocerán el peligro de esta idea. </p>
+                    <p>El propósito de este dossier es acercar información a la comunidad de FCEA sobre el trabajo que hacemos, sensibilizar y contribuir al proceso de institucionalización de esta política.</p>
+                    <p class="pregunta">Rodrigo Arim</p>
                 </div>
 
           </section>
@@ -97,13 +101,14 @@
                     <h3>Panorama del sistema penal</h3>
                     <p>Agrupamos algunos datos estadísticos que brindan un panorama general del sistema carcelario y su evolución en el tiempo. Además, compartimos una reciente entrevista que personas privadas de libertad realizaron al comisionado parlamentario en el marco del proyecto de extensión Talleres de radio y prensa en la Unidad N°4 del INR. En ella se plantean asuntos centrales de la realidad cotidiana de la educación en privación de libertad. </p>
                 </div>
-                <button id="chart_1" class="btn btn-outline-dark chart_button active" data-chart='chart1'>Población carcelaria</button>
+                <button id="chart_1" class="btn btn-outline-dark chart_button active" data-chart='chart1'>Evolución población carcelaria</button>
                 <button id="chart_2" class="btn btn-outline-dark chart_button" data-chart='chart2'>Nivel educativo</button>
                 <button id="chart_3" class="btn btn-outline-dark chart_button" data-chart='chart3'>Plazas educativas</button>
                 <button id="chart_4" class="btn btn-outline-dark chart_button" data-chart='chart4'>Distribución por género</button>
                 <button id="chart_5" class="btn btn-outline-dark chart_button" data-chart='chart5'>Por delito</button>
+                <button id="chart_6" class="btn btn-outline-dark chart_button" data-chart='chart6'>Según situación jurídica</button>
+                <!--<button id="chart_7" class="btn btn-outline-dark chart_button" data-chart='chart7'>Por delito1</button>-->
                     <div id="charts">
-
                         <div id="chart1" class="chart_container chart_container_selected">
                             <div class="titulo_chart">
                                 <h2>Evolución de la población carcelaria en Uruguay 1990-2017</h2>
@@ -200,6 +205,44 @@
                               </div>
                             </div>
                         </div>
+                        <div id="chart6" class="chart_container">
+                            <div class="titulo_chart">
+                                <h2>Población Reclusa a nivel Nacional según situación jurídica</h2>
+                            </div>
+                            <canvas id="myChart6"></canvas>
+                            <div class="card text-center text-white bg-dark">
+                              <div class="card-header">
+                                Destacado
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Pico a pico con Juan Manuel Petit</h5>
+                                <p class="card-text">La entrevista fue realizada en el marco del proyecto de extensión Talleres​ ​de​ ​radio​ ​y​ ​prensa​ ​en​ ​la​ ​Unidad​ ​N°​ ​4​ ​del​ ​Instituto​ ​Nacional​ ​de​ ​Rehabilitación, que funciona en la Comunidad Educativa de ese centro desde noviembre de 2017 y del que participa Sala de Redacción. Este espacio de la Facultad de Información y Comunicación, que cuenta con el apoyo de Radiodifusión Nacional del Uruguay, fue aprobado y financiado por la Comisión Sectorial de Extensión y Actividades en el Medio en su llamado a Derechos Humanos 2017.</p>
+                                <a href="notaPetit.html" class="btn btn-outline-light">Ir a la nota completa</a>
+                              </div>
+                              <div class="card-footer text-muted">
+                                <p>Fuente: <a href="http://sdr.liccom.edu.uy/2018/05/25/comisionado/">http://sdr.liccom.edu.uy/2018/05/25/comisionado/</a></p>
+                              </div>
+                            </div>
+                        </div>
+                        <div id="chart7" class="chart_container">
+                            <div class="titulo_chart">
+                                <h2>Población Reclusa a nivel Nacional según situación jurídica</h2>
+                            </div>
+                            <canvas id="myChart7"></canvas>
+                            <div class="card text-center text-white bg-dark">
+                              <div class="card-header">
+                                Destacado
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Pico a pico con Juan Manuel Petit</h5>
+                                <p class="card-text">La entrevista fue realizada en el marco del proyecto de extensión Talleres​ ​de​ ​radio​ ​y​ ​prensa​ ​en​ ​la​ ​Unidad​ ​N°​ ​4​ ​del​ ​Instituto​ ​Nacional​ ​de​ ​Rehabilitación, que funciona en la Comunidad Educativa de ese centro desde noviembre de 2017 y del que participa Sala de Redacción. Este espacio de la Facultad de Información y Comunicación, que cuenta con el apoyo de Radiodifusión Nacional del Uruguay, fue aprobado y financiado por la Comisión Sectorial de Extensión y Actividades en el Medio en su llamado a Derechos Humanos 2017.</p>
+                                <a href="notaPetit.html" class="btn btn-outline-light">Ir a la nota completa</a>
+                              </div>
+                              <div class="card-footer text-muted">
+                                <p>Fuente: <a href="http://sdr.liccom.edu.uy/2018/05/25/comisionado/">http://sdr.liccom.edu.uy/2018/05/25/comisionado/</a></p>
+                              </div>
+                            </div>
+                        </div>
                     </div>
             </div><!-- charts -->
         </section>
@@ -220,9 +263,8 @@
                       <div class="intro">
                           <h2>Más Universidad: Aportes al desarrollo del país</h2>
                           <p>Más Universidad, aportes al desarrollo del país fue un ciclo de vídeos producidos por la Universidad de la República, abordando temas diversos en los que la institución brinda un aporte importante a la sociedad. A la vez se propone la divulgación científica en materias puntuales. La producción está a cargo de Rectorado y la Unidad de Comunicación de la Universidad de la República (UCUR) y la realización estuvo a cargo de docentes de la Facultad de Información y Comunicación, con la colaboración de un grupo de estudiantes avanzados de Comunicación que realizaron prácticas preprofesionales.
-                          Compartimos dos videos que tienen como objetivo difundir el trabajo de la Udelar con estudiantes privados de libertad
-                          Estudiar en contextos de encierro:
-                          </p>
+                          Compartimos dos videos que tienen como objetivo difundir el trabajo de la Udelar con estudiantes privados de libertad, <i>Estudiar en contextos de encierro:</i></p>
+                          <p class="pregunta"> </p>
                       </div>
                     </div>
                   </div>
@@ -243,9 +285,9 @@
                         <div class="col-sm-6">
                           <div class="card">
                             <div class="card-body">
-                              <h5 class="card-title">Special title treatment</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h5 class="card-title">Universidad en cárceles</h5>
+                              <p class="card-text">La Universidad de la República tiene el reto de la democratización del acceso al conocimiento y a la educación terciaria.</p>
+                              <a href="universidad_carceles.html" class="btn btn-dark">Nota completa</a>
                             </div>
                           </div>
                         </div>
@@ -253,9 +295,11 @@
                   </div>
                 </div>
         </section>
-
         <section id="FCEA">
-            <h1>NOTAS DE FCEA</h1>
+            <h1>La Facultad en contextos de encierro</h1>
+            <div class="container intro">
+                <p>El vínculo entre la Facultad de Ciencias Económicas y de Administración (FCEA) y el sistema penitenciario ha sido predominantemente a través de la función de extensión. Desde allí se realizan distintas prácticas que buscan contribuir a la solución de problemas de interés al tiempo que formar estudiantes y docentes universitarios en la temática. Compartimos algunas crónicas y documentos que relatan diferentes etapas de este trabajo.</p>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -299,7 +343,7 @@
                   <div class="col-md-4">
                     <div class="card" >
                         <div class="zoom">
-                            <a href="fcea_carceles.html"><img class="card-img-top img-fluid" src="img/visita_fcea.jpeg" alt="Card image cap"></a>
+                            <a href="fcea_carceles.html"><img class="card-img-top img-fluid" src="img/01.png" alt="Card image cap"></a>
                         </div>
                       <div class="card-body">
                         <h5 class="card-title">FCEA en las cárceles</h5>
@@ -311,65 +355,52 @@
                 </div>
             </div>
         </section>
-
-
         <div id="parallax_dos" class="parallax">
 
         </div>
         <section id="recursos">
-            <h1>DESCARGAS</h1>
+            <h1>Recursos</h1>
             <div class="container">
                     <div class="row">
                         <div class="col-md-4">
-                            <h2>Recursos</h2>
+                            <h2>Seguir leyendo</h2>
                             <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                    <small>3 days ago</small>
-                                  </div>
-                                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                  <small>Donec id elit non mi porta.</small>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                  </div>
-                                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                  <small class="text-muted">Donec id elit non mi porta.</small>
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                  </div>
-                                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                  <small class="text-muted">Donec id elit non mi porta.</small>
-                                </a>
+                                <div class="card border-secondary mb-3" style="max-width: 18rem;">
+                                 <div class="card-header"></div>
+                                 <div class="card-body text-secondary">
+                                   <h5 class="card-title">¿Te interesa el tema y querés seguir leyendo? </h5>
+                                   <p class="card-text">En esta sección compartimos documentos importantes para el trabajo de FCEA en cárceles, como el Protocolo para estudiantes privados de libertad, o la resolución del INR sobre redención de pena por estudios, y además enlazamos a distintas publicaciones de interés. Si sos estudiante o docente y querés acercarte a trabajar con estudiantes privados de libertad ponete en contacto con la UERM a través de uerm@ccee.edu.uy</p>
+                                 </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <h2>Documentos</h2>
                             <div class="list-group">
-                              <a href="#" class="list-group-item list-group-item-action">Protocolo FCEA</a>
-                              <a href="#" class="list-group-item list-group-item-action">Resolución CDC</a>
-                              <a href="#" class="list-group-item list-group-item-action">Resolución INR</a>
+                                <a href="docs/protocoloFCEA.pdf" class="list-group-item list-group-item-action">Protocolo FCEA sobre rendición de pena</a>
+                                <a href="docs/Resolución CDC 2016 Dist. 426.16.pdf" class="list-group-item list-group-item-action">Resolución CDC 1</a>
+                                <a href="docs/Resolución CDC 2016 Dist. 1044.16.pdf" class="list-group-item list-group-item-action">Resolución CDC 2</a>
+                                <a href="docs/ConvenioINR-UdelaR.pdf" class="list-group-item list-group-item-action">Convenio INR - UDELAR</a>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <h2>Lecturas/Otros</h2>
+                            <h2>Otras lecturas</h2>
                             <div class="list-group">
-                              <a href="docs/protocoloFCEA.pdf" class="list-group-item list-group-item-action">Protocolo FCEA</a>
-                              <a href="#" class="list-group-item list-group-item-action">Resolución CDC</a>
-                              <a href="#" class="list-group-item list-group-item-action">Resolución INR</a>
+                              <a href="https://parlamento.gub.uy/cpp" class="list-group-item list-group-item-action">Comisionado parlamentario penitenciario</a>
+                              <a href="http://inddhh.gub.uy/" class="list-group-item list-group-item-action">INDDHH</a>
+                              <a href="https://www.minterior.gub.uy/observatorio/ " class="list-group-item list-group-item-action">Observatorio Ministerio del Interior</a>
+                              <a href="http://pim.udelar.edu.uy/ " class="list-group-item list-group-item-action">Programa Integral Metropolitano</a>
+                              <a href="http://www.extension.udelar.edu.uy/derechos-humanos-ddhh/ " class="list-group-item list-group-item-action">Área DDHH SCEAM</a>
+                              <a href="http://www.serpaj.org.uy/serpaj/index.php/documentos-de-interes/category/2-inf-serpaj" class="list-group-item list-group-item-action">Informe SERPAJ 2017 </a>
+                              <a href="http://nacvi.cienciassociales.edu.uy/wp-content/uploads/2015/05/2015-Bardazano-Corti-Duffau-y-Trajtenberg.pdf " class="list-group-item list-group-item-action">Discutir la cárcel, pensar la sociedad  (CSIC-Trilce) </a>
+                              <a href="https://www.colibri.udelar.edu.uy/jspui/bitstream/123456789/9509/1/Inseguridad%2c%20Delito%20y%20Estado.pdf" class="list-group-item list-group-item-action">Inseguridad, delito y Estado (CSIC-Trilce)</a>
+                              <a href="https://issuu.com/prisontoprison/docs/uruguay_-_catalogue " class="list-group-item list-group-item-action">Prison to Prison:</a>
+                              <a href="http://unacarcelurbana.uy/ " class="list-group-item list-group-item-action">Una cárcel urbana</a>
                             </div>
                         </div>
                     </div>
-
             </div>
         </section>
-
       </main>
       <footer>
           <div class="container">

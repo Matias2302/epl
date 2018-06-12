@@ -193,7 +193,7 @@ h6{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-image:url("../img/fcea stock grande-6.jpg");
+  background-image:url("../img/img_parallax.jpg");
 }
 
 /*==========================================*/
@@ -267,7 +267,9 @@ h6{
     transform: scale(1.1);
 }
 
-
+.intro{
+    color:#fff;
+}
 /*==========================================*/
 /*======= Universidad ==========*/
 #universidad{

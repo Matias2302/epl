@@ -82,12 +82,12 @@ var chart = new Chart(ctx, {
     data: {
       datasets: [{
             label: 'Población',
-            data: [67, 55, 1065, 3745, 308, 604, 1105, 13, 16, 103, 9, 604, 835, 159, 156, 326, 200, 154],
+            data: [67, 55, 3745, 1065, 308, 604, 1105, 13, 16, 103, 9, 604, 835, 159, 156, 326, 200, 154, 115, 362, 164, 88, 102, 330, 43, 159, 27, 21, 96],
             backgroundColor:'#fa8072',
           }, {
             label: 'Plazas Educativas',
-            data: [400, 614, 585, 466],
-            
+            data: [0, 14, 323, 293, 196, 150, 182, 0, 16, 55, 0, 155, 168, 0, 37, 34, 100, 72, 60, 118, 59, 24, 44, 149, 0, 52, 0, 0, 54],
+
             backgroundColor:'#0e2f44',
             // Changes this dataset to become a line
 
@@ -166,7 +166,7 @@ var chart = new Chart(ctx, {
             // Changes this dataset to become a line
             type: 'bar'
           }],
-      labels: ['Rapiña o tentativa de rapiña', 'Hurto', 'Copamiento', 'Homicidio', 'Narcotráfico/estupefacientes/tráfico', 'Porte de arma', 'Delito sexual/proxeneta/atentado al pudor', 'Agresiones/Lesiones', 'Deacato','Violencia doméstica','Accidente de tránsito','Delitos Económicos/Estafa','Receptación','Otro','Varios','NS/NC']
+      labels: ['Rapiña o tentativa de rapiña', 'Hurto', 'Copamiento', 'Homicidio', 'Narcotráfico/estupefacientes/tráfico', 'Porte de arma', 'Delito sexual/proxeneta/atentado al pudor', 'Agresiones/Lesiones', 'Desacato','Violencia doméstica','Accidente de tránsito','Delitos Económicos/Estafa','Receptación','Otro','Varios','NS/NC']
     },
     // Configuration options go here
     options: {
@@ -181,7 +181,7 @@ var chart = new Chart(ctx, {
     }
 });
 
-////////////////////////////////////////
+//////////////////////CHART 4//////////////////
 var ctx = document.getElementById('myChart4').getContext('2d');
 var myPieChart = new Chart(ctx,{
     type: 'pie',
@@ -206,6 +206,69 @@ options: {
 }
 }
 });
+//////////////////////////////////////////////////////
+///////////////////CHART 4//////////////
+var ctx = document.getElementById('myChart6').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+    // The data for our dataset
+    data: {
+      datasets: [{
+            label: 'Procesados',
+            data: [83.7, 78.3, 75.9, 24.1, 25.4, 79.4, 66.7, 54, 73.3, 84.4, 77.9, 82.1, 78.4, 77.9, 82.8, 86.6, 73.8, 66, 91, 68.5, 43.7, 79.4, 3, 21.4, 3.8, 78],
+            backgroundColor: '#4b1d1d',
+          }, {
+                label: 'Penados',
+                data: [16.3, 21.7, 24.1, 74.6, 20.6, 33.3, 46, 26.7, 15.6, 22.1, 17.9, 21.6, 22.1, 17.2, 13.4, 26.2, 34, 9, 31.5, 56.3, 20.6, 97, 78.6, 96.2, 22],
+                backgroundColor:'#0e2f44',
+            }],
+      labels: ['Artigas', 'Canelones', 'Cerro Largo', 'Colonia', 'Durazno', 'Flores', 'Florida', 'Lavalleja', 'Maldonado', 'Paysandú', 'Río Negro',' Rivera','Rocha','Salto','Soriano','Tacuarembó/Departamental','Tacuarembó P. de los Toros','Treinta y Tres','ComCar','Libertad', 'Unidad Penitenciaria Juan Soler (San José)','Centro de Recup. Carcelario N°2', 'Unidad Penitenciaria N°8', 'Unidad Penitenciaria Punta de Rieles','Centro Metropolitano de Rehabilitación femen']
+    },
+    // Configuration options go here
+    options: {
+
+        title: {
+     display: true,
+     text: 'Porcentajes, 30 de junio de 2015'
+   }
+    }
+});
+//////////////////////CHART 4//////////////////
+var ctx = document.getElementById('myChart7').getContext('2d');
+var myPieChart = new Chart(ctx,{
+    type: 'bar',
+    data : {
+        datasets: [
+      {
+        label: 'Low',
+        data: [67.8],
+        backgroundColor: '#D6E9C6' // green
+      },
+      {
+        label: 'Moderate',
+        data: [20.7],
+        backgroundColor: '#FAEBCC' // yellow
+      },
+      {
+        label: 'High',
+        data: [11.4],
+        backgroundColor: '#EBCCD1' // red
+      }
+    ]
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+
+},
+options: {
+  scales: {
+    xAxes: [{ stacked: true }],
+    yAxes: [{ stacked: true }]
+  }
+}
+});
+//////////////////////////////////////////////////////
+////////////////////////////////////////
 ///////////////////CHART 1 DISPLAY//////////////
 $('.chart_button').click(function(){
     var chartID = $(this).attr('data-chart');
