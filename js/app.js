@@ -170,14 +170,11 @@ var chart = new Chart(ctx, {
     },
     // Configuration options go here
     options: {
-        layout:{
-            padding:{
-                left:50,
-                right:50,
-                top:50,
-                bottom:50
-            }
-        }
+        
+        title: {
+     display: true,
+     text: 'Porcentajes'
+    }
     }
 });
 
